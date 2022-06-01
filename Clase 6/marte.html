@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Peso Espacial</title>
+    <style type="text/css">
+        body
+            {
+                color:rgb(0, 0, 0);
+                background-color: rgb(171, 201, 234);
+            }
+        body
+        h1
+        {
+            font-family: "Comic Sans MS";
+        }
+    </style>
+</head>
+<body>
+    <h1>Tu peso en Marte</h1>
+<p></p>
+<script>
+    var usuario = prompt("Ingresa tu peso en kg");
+    var g_tierra = 9.8;
+    var g_marte = 3.7;
+    var g_jupiter = 24.8;
+    var pesoT = parseFloat(usuario).toFixed(2);
+    var pesoMarte = pesoT * g_marte / g_tierra;
+    pesoMarte = parseFloat(pesoMarte).toFixed(2);
+    document.write("Tu peso en Marte es de <strong>" + pesoMarte + " Kg</strong>");
+    
+</script>
+
+    
+</body>
+</html>
