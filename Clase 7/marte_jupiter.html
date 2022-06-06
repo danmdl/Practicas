@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tu Peso</title>
+        <style>
+            body{
+                background-color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: medium;
+            }
+        </style>
+    </head>
+    <body>
+        <p> Peso pesado</p>
+        
+        <script>
+        var usuario = prompt("Cual es tu peso?")
+        var planeta = parseInt(prompt("A que planeta quieres viajar?\nEscriba 1 para Marte \nEscriba 2 para Jupiter"));
+        var g_tierra = 9.8;
+        var g_marte = 3.7;
+        var g_jupiter = 24.8;
+        if (planeta==1)
+        {
+            pesoMarte = usuario * g_marte / g_tierra
+            document.write("Tu peso en Marte es de <strong>" + parseFloat(pesoMarte).toFixed(2) + " kg<strong/>")
+        }    
+        else if (planeta == 2)
+            {
+            pesoJupiter = usuario * g_jupiter / g_tierra
+            document.write("Tu peso en Jupiter es de <strong>" + parseFloat(pesoJupiter).toFixed(2) + " kg<strong/>")
+            }
+        else
+        {
+            document.write("que cocha ta' haciendo?")
+        }
+        
+        </script>
+    </body>
+</html>
